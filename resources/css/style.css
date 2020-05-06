@@ -1,0 +1,149 @@
+html, body{
+    background-color: gray;
+    font-family: Verdana;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:limegreen;
+}
+
+a:active {
+    color: red;
+}
+
+#container, footer, header {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px 10px;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#yt {
+    float: left;
+}
+
+#naam5 {
+    margin-left: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.avatars {
+    float: left;
+    border: 1px solid black;
+    height: 313px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.rights {
+    display: inline-block;
+    color: black;
+    width: 720px;
+    margin-left: 200px;
+}
+
+#bt1 {
+    margin-right: 2px;
+    float: left;
+}
+
+#titel{
+    margin-left: 810px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.item{
+    border-bottom: 1px solid silver;
+    padding: 5px;
+    margin: 10px;
+    display: inline-flex;
+    width: 500px;
+}
+
+.item:hover{
+    background-color: gainsboro;
+}
+
+.item .left{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.item .left .avatar {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 150px;
+}
+
+.item .right{
+    display: inline-block;
+}
+
+.item .right h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.item:hover .right ul{
+    color: black;
+}
+
+.right {
+    width: 300px;
+}
+
+.navi {
+    width: 800px;
+    margin: auto;
+}
+
+.navi ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkgrey;
+}
+
+.navi li {
+  float: left;
+}
+
+.navi li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 160px;
+}
+
+.navi li a:hover {
+  color: white;
+}
+
+#textput {
+    margin-left: 375px;
+}
+
+#submit {
+    margin-left: 145px;
+}

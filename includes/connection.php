@@ -1,10 +1,12 @@
 <?php
 
+$connec = GetDatabaseConnection();
+
 function GetDatabaseConnection(){
 	$servername = "localhost";
 	$username = "root";
 	$password = "mysql";
-	$dbname = "databank_php";
+	$dbname = "databanks_php";
 
 
 	try {
@@ -17,13 +19,11 @@ function GetDatabaseConnection(){
 	}
 }
 
-function GetChars(){
+function GetGameId($id){
 	$conn = GetDatabaseConnection();
-	$query = $conn->prepare("SELECT name, avatar, health, bio, color, attack, defense, weapon, armor FROM characters");
-
- 	$query->execute();
-
- 	return $query->fetchall();
+    $query = $conn->prepare("SELECT * FROM games WHERE id = :id");
+    $query->bindParam(":id", $id);
+    $query->execute();
+    return $query->fetch();
 }
-
 ?>
